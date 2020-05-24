@@ -1,0 +1,3 @@
+rootProject.name='Hyperion-RemoteConfig'
+include ':sample'
+include ':hyperion-remoteconfig'

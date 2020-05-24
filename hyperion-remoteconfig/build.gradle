@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation "androidx.appcompat:appcompat:${androidx_version}"
+    implementation "androidx.recyclerview:recyclerview:${androidx_version}"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:${androidx_version}"
+    implementation "com.google.android.material:material:${material_version}"
+
+    implementation "com.google.firebase:firebase-config:${remote_config_version}"
+    implementation "com.willowtreeapps.hyperion:hyperion-plugin:${hyperion_version}"
+    annotationProcessor "com.google.auto.service:auto-service:${auto_service_version}"
+    kapt "com.google.auto.service:auto-service:${auto_service_version}"
+}
+
+// $ ./gradlew clean build bintrayUpload -PbintrayUser=star-zero -PbintrayKey=BINTRAY_KEY -PdryRun=false
+publish {
+    userOrg = 'k-tomoyasu'
+    groupId = 'com.fusuma'
+    artifactId = 'hyperion-firebase-remote-config'
+    publishVersion = '1.0.0'
+    licences = ['MIT']
+    desc = 'hyperion plugin to show Firebase Remote Config key-values.'
+    website = 'https://github.com/k-tomoyasu/hyperion-firebase-remote-config'
+}

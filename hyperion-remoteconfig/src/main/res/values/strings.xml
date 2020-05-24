@@ -1,0 +1,5 @@
+<resources>
+    <string name="hype_remote_config_plugin_name">Firebase Remote Config Viewer</string>
+    <string name="hype_remote_config_plugin_subtitle">View your app\'s Firebase Remote Config values.</string>
+    <string name="hype_remote_config_empty_value">Remote Config is not Activated・Fetched or No Config Exists</string>
+</resources>

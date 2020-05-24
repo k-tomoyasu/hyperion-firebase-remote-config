@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fusuma.hyperion.remoteconfig">
+    <application>
+        <activity
+            android:theme="@style/hype_RemoteConfigActivityTheme"
+            android:name="com.fusuma.hyperion.remoteconfig.list.RemoteConfigActivity"
+            />
+    </application>
+</manifest>
