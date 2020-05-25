@@ -23,14 +23,14 @@ class RemoteConfigRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = configValues[position]
-        holder.mKeyView.text = item.key
-        holder.mContentView.text = item.value.asString()
+        holder.keyView.text = item.key
+        holder.valueView.text = item.value.asString()
     }
 
     override fun getItemCount(): Int = configValues.size
 
     inner class ViewHolder(mView: View) : RecyclerView.ViewHolder(mView) {
-        val mKeyView: TextView = mView.item_key
-        val mContentView: TextView = mView.item_value
+        val keyView: TextView = mView.item_key
+        val valueView: TextView = mView.item_value
     }
 }

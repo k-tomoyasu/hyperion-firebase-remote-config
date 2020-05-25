@@ -5,12 +5,23 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.fusuma.hyperion.remoteconfig.R
+import kotlinx.android.synthetic.main.hype_activity_remote_config.*
 
 class RemoteConfigActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.hype_activity_remote_config)
+
+        setSupportActionBar(hype_toolbar)
+        requireNotNull(supportActionBar).run {
+            setDisplayHomeAsUpEnabled(true)
+        }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     companion object {
