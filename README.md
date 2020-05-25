@@ -4,7 +4,7 @@ hyperion plugin to show Firebase Remote Config key-values.
 
 ## ScreenShots
 ### viewer
-![config-viewer](art/config-viewer.png)
+![config-viewer](art/plugin-demo.gif)
 ### firebase console
 ![console](art/firebase-console.png)
 
