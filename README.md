@@ -1,6 +1,6 @@
 # hyperion-firebase-remote-config
-[ ![Download](https://api.bintray.com/packages/k-tomoyasu/maven/hyperion-firebase-remote-config/images/download.svg?version=1.0.0) ](https://bintray.com/k-tomoyasu/maven/hyperion-firebase-remote-config/1.0.0/link)  
-hyperion plugin to show Firebase Remote Config key-values.
+[ ![Download](https://api.bintray.com/packages/k-tomoyasu/maven/hyperion-firebase-remote-config/images/download.svg?version=1.0.1) ](https://bintray.com/k-tomoyasu/maven/hyperion-firebase-remote-config/1.0.1/link)  
+[hyperion](https://github.com/willowtreeapps/Hyperion-Android) plugin to show [Firebase Remote Config](https://firebase.google.com/docs/remote-config/) key-values.
 
 ## ScreenShots
 ### viewer
@@ -12,7 +12,7 @@ hyperion plugin to show Firebase Remote Config key-values.
 Add to build.gradle
 ```groovy
 dependencies {
-	debugImplementation "com.willowtreeapps.hyperion:hyperion-core:$hyperion_version"
+    debugImplementation "com.willowtreeapps.hyperion:hyperion-core:$hyperion_version"
     debugImplementation "com.fusuma:hyperion-firebase-remote-config:$plugin_version"
 }
 ```
