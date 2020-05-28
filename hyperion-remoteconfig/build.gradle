@@ -47,7 +47,7 @@ publish {
     userOrg = 'k-tomoyasu'
     groupId = 'com.fusuma'
     artifactId = 'hyperion-firebase-remote-config'
-    publishVersion = '1.0.1'
+    publishVersion = '1.0.2'
     licences = ['MIT']
     desc = 'hyperion plugin to show Firebase Remote Config key-values.'
     website = 'https://github.com/k-tomoyasu/hyperion-firebase-remote-config'
