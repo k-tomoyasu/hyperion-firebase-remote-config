@@ -5,8 +5,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.fusuma.hyperion.remoteconfig.R
+import com.willowtreeapps.hyperion.plugin.v1.HyperionIgnore
 import kotlinx.android.synthetic.main.hype_activity_remote_config.*
 
+@HyperionIgnore
 class RemoteConfigActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
